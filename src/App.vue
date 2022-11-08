@@ -34,6 +34,12 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  opacity: 0;
+  animation: present 0.5s forwards;
+}
+@keyframes present {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .app {
