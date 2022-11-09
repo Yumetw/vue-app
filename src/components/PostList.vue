@@ -1,4 +1,7 @@
 <template>
+  <div class="no-posts" v-if="posts.length === 0">
+    Пока что тут пусто =(
+  </div>
   <PostItem
       v-for="post in posts"
       :post="post"
@@ -23,13 +26,10 @@ export default {
 
 <style scoped>
 
-.post {
-  padding: 15px;
-  border: 1px solid teal;
-  margin-top: 15px;
-  min-height: 130px;
-  height: 100%;
-  width: 100%;
+.no-posts {
+  color: lightgray;
+  font-size: 1.3em;
+  font-family: Bahnschrift,serif;
 }
 
 </style>

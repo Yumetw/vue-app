@@ -28,6 +28,16 @@ export default {
   display: inline-block;
 }
 
+.post {
+  padding: 15px;
+  border: 1px solid teal;
+  margin-top: 15px;
+  min-height: 130px;
+  height: 100%;
+  width: 100%;
+}
+
+
 .post_date {
   color: teal;
   font-size: 0.8em;

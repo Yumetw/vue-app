@@ -47,6 +47,7 @@ form {
 
 .btn_createPost{
   margin-top: 10px;
+  margin-bottom: 50px;
   color: teal;
   background-color: transparent;
   border: 1px solid teal;
@@ -58,6 +59,11 @@ form {
   background-color: ghostwhite;
   transform: scale(101%);
   cursor: pointer;
+}
+
+h1 {
+  font-family: Bahnschrift,serif;
+  margin-bottom: 1%;
 }
 
 </style>
