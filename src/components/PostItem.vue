@@ -4,7 +4,7 @@
     <div class="post_date">{{ post.date }}</div>
     <div class="post_title"><strong>Название:</strong> {{ post.title }}</div>
     <div class="post_body"><strong>Текст:</strong> {{ post.body }}</div>
-    <MyButton style="display: inline; float: right" class="btn_deletePost">Удалить</MyButton>
+    <MyButton class="btn_deletePost" @click="$emit('delete',post)">Удалить</MyButton>
   </div>
 </template>
 
@@ -39,13 +39,14 @@ export default {
   float: right;
 }
 
-.btn_deletePost{
+.btn_deletePost {
   margin-top: 10px;
   color: teal;
   background-color: transparent;
   border: 1px solid teal;
-  align-self: flex-end;
   padding: 10px 15px;
+  display: inline;
+  float: right;
 }
 
 .btn_deletePost:hover {
